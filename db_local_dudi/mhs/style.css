@@ -1,0 +1,153 @@
+/* Font dan Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #3ed120, #1e8f36);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+h2, h3 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Container */
+form {
+    background: #ffffff;
+    padding: 30px;
+    max-width: 420px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efek Hover Form */
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Label */
+label {
+    display: block;
+    font-weight: 600;
+    margin-top: 12px;
+    color: #333;
+}
+
+/* Input dan Select */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+    background: #f9f9f9;
+}
+
+input:focus, select:focus {
+    border-color: #15b85f;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 150, 50, 0.4);
+    background: #fff;
+}
+
+/* Button Umum */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efek Hover Button */
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #003c7a);
+    transform: scale(1.05);
+}
+
+/* Button Delete */
+button.delete-btn {
+    background: linear-gradient(135deg, #dc3545, #a71d2a);
+}
+
+button.delete-btn:hover {
+    background: linear-gradient(135deg, #a71d2a, #80171e);
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Header Tabel */
+th, td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 15px;
+}
+
+th {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-weight: 700;
+}
+
+/* Button dalam Tabel */
+td button {
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* Efek Hover pada Row Tabel */
+tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+/* Responsif untuk Mobile */
+@media (max-width: 600px) {
+    form {
+        width: 95%;
+        padding: 25px;
+    }
+    table {
+        font-size: 14px;
+    }
+    th, td {
+        padding: 10px;
+    }
+}
